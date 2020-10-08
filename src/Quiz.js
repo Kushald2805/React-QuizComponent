@@ -6,13 +6,15 @@ let quizData = require('./quiz_data.json');
 
 class Quiz extends Component{
 	render(){
-		if(this.state.quiz_position-1 === quizData.quiz_questions.length){
-			const isQuizEnd=true;
-		}
-		else{
-			const isQuizEnd=false;
-		}
-		const isQuizEnd=true;
+		// if(this.state.quiz_position-1 == quizData.quiz_questions.length){
+		// 	console.log("Heklo");
+		// 	const isQuizEnd=true;
+		// }
+		// else{
+		// 	console.log("Heklo");
+		// 	const isQuizEnd=false;
+		// }
+		const isQuizEnd= this.state.quiz_position-1 == quizData.quiz_questions.length;
 		return(
 			<div>
 			{isQuizEnd ? (<QuizEnd/>) : (<QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position-1]}/>)}
