@@ -3,8 +3,8 @@
   "version": "0.1.1",
   "private": true,
   "dependencies": {
-    "react": "16.2.0",
-    "react-dom": "16.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-scripts": "1.1.1"
   },
   "scripts": {
@@ -44,9 +44,9 @@
     "chai-enzyme": "0.8.0",
     "cross-env": "5.1.4",
     "enzyme": "3.3.0",
-    "enzyme-adapter-react-16": "1.1.1",
+    "enzyme-adapter-react-16": "^1.15.5",
     "esprima": "4.0.0",
-    "react-test-renderer": "16.3.1",
+    "react-test-renderer": "^16.13.1",
     "sinon": "5.0.1"
   }
 }
